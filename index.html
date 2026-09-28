@@ -624,7 +624,7 @@ html{scroll-padding-top:92px}
 .capability-inner{width:min(92vw,1780px);margin:auto;display:grid;grid-template-columns:.82fr 1.18fr;gap:8vw;align-items:start}.capability-intro h2{font-size:clamp(48px,5.5vw,94px);line-height:.93;letter-spacing:-.045em;max-width:700px}.capability-list{border-top:1px solid rgba(255,255,255,.13)}.capability-list article{display:grid;grid-template-columns:75px 1fr;gap:25px;padding:30px 0;border-bottom:1px solid rgba(255,255,255,.13)}.capability-list article>span{font-family:"Playfair Display",serif;color:var(--gold);font-size:22px}.capability-list h3{font-family:"DM Sans",sans-serif;font-size:clamp(20px,1.7vw,30px);font-weight:500;margin-bottom:8px}.capability-list p{font-size:16px;line-height:1.7;color:rgba(245,238,230,.67);max-width:700px}
 .vision{isolation:isolate}.vision:after{content:"";position:absolute;inset:auto -10% 0;height:45%;background:radial-gradient(ellipse at 50% 100%,rgba(212,175,55,.09),transparent 62%);pointer-events:none;z-index:-1}
 .vision-principle{transition:transform .45s ease,border-color .45s ease,background .45s ease}.vision-principle:hover{transform:translateY(-8px);border-color:rgba(212,175,55,.42)!important;background:linear-gradient(145deg,rgba(112,13,39,.68),rgba(10,1,5,.8))!important}
-.decision-section{position:relative;padding:120px 0;background:#110207;border-top:1px solid rgba(212,175,55,.12)}.decision-inner{width:min(92vw,1780px);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:9vw;align-items:center}.decision-inner h2{font-size:clamp(48px,6vw,100px);line-height:.92;letter-spacing:-.05em}.decision-copy p{font-size:clamp(18px,1.4vw,24px);line-height:1.7;color:#e6d9d8;max-width:760px}.decision-points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:32px 0}.decision-points span{padding:14px 16px;border:1px solid rgba(255,255,255,.1);color:rgba(245,238,230,.72);font-size:12px;letter-spacing:.08em;text-transform:uppercase}.contact-assurance{display:flex;gap:9px;flex-wrap:wrap;margin-top:30px}.contact-assurance span{font-size:10px;letter-spacing:.12em;text-transform:uppercase;border:1px solid rgba(212,175,55,.2);padding:10px 12px;color:rgba(245,238,230,.65)}
+.decision-section{position:relative;padding:120px 0;background:linear-gradient(135deg,#2a0810 0%,#4b0f1a 52%,#2a0810 100%);border-top:1px solid rgba(212,175,55,.16)}.decision-inner{width:min(92vw,1780px);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:9vw;align-items:center}.decision-inner h2{font-size:clamp(48px,6vw,100px);line-height:.92;letter-spacing:-.05em}.decision-copy p{font-size:clamp(18px,1.4vw,24px);line-height:1.7;color:#e6d9d8;max-width:760px}.decision-points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:32px 0}.decision-points span{padding:14px 16px;border:1px solid rgba(255,255,255,.1);color:rgba(245,238,230,.72);font-size:12px;letter-spacing:.08em;text-transform:uppercase}.contact-assurance{display:flex;gap:9px;flex-wrap:wrap;margin-top:30px}.contact-assurance span{font-size:10px;letter-spacing:.12em;text-transform:uppercase;border:1px solid rgba(212,175,55,.2);padding:10px 12px;color:rgba(245,238,230,.65)}
 /* premium interaction */
 .btn{position:relative;overflow:hidden}.btn:before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.18),transparent 70%);transform:translateX(-120%);transition:transform .7s ease}.btn:hover:before{transform:translateX(120%)}
 .card,.document,.vision-principle{will-change:transform}
@@ -738,6 +738,337 @@ header .logo *,header .brand *,nav .logo *,nav .brand *,.site-logo *,.brand-logo
 header nav,.site-header nav,.navbar nav{align-items:center!important}
 }
 </style>
+
+<style id="arcamone-mobile-services-fix">
+/* Consistent Arcamone palette: no white/beige cinematic service chapter. */
+.cinematic-services{
+  background:
+    radial-gradient(circle at 82% 20%, rgba(128,25,52,.24), transparent 34%),
+    linear-gradient(145deg,#21050d 0%,#4b0f1a 48%,#300812 100%) !important;
+  color:#f5eee5 !important;
+}
+.cinematic-services .chapter-lead{
+  color:#d8cdd0 !important;
+}
+.cinematic-services .service-timeline{
+  border-top-color:rgba(217,179,108,.28) !important;
+  border-bottom-color:rgba(217,179,108,.28) !important;
+}
+.cinematic-services .service-timeline article{
+  border-right-color:rgba(217,179,108,.18) !important;
+}
+.cinematic-services .service-timeline span{
+  color:#d9b36c !important;
+}
+.cinematic-services .service-timeline h3{
+  color:#f5eee5 !important;
+}
+.cinematic-services .service-timeline p{
+  color:#cfc2c5 !important;
+}
+
+@media(max-width:900px){
+  .cinematic-services{
+    min-height:auto !important;
+    height:auto !important;
+    padding:92px 24px 78px !important;
+    display:block !important;
+  }
+  .cinematic-services .chapter-inner{
+    width:100% !important;
+    margin:0 !important;
+  }
+  .cinematic-services .chapter-eyebrow{
+    display:block;
+    margin-bottom:24px;
+  }
+  .cinematic-services h2{
+    font-size:clamp(48px,14vw,72px) !important;
+    line-height:.92 !important;
+    margin-bottom:24px !important;
+  }
+  .cinematic-services .chapter-lead{
+    font-size:16px !important;
+    line-height:1.65 !important;
+    margin:0 0 38px !important;
+  }
+  .cinematic-services .service-timeline{
+    display:block !important;
+    border-top:1px solid rgba(217,179,108,.28) !important;
+    border-bottom:0 !important;
+  }
+  .cinematic-services .service-timeline article{
+    min-height:auto !important;
+    padding:28px 0 30px !important;
+    border-right:0 !important;
+    border-bottom:1px solid rgba(217,179,108,.16) !important;
+  }
+  .cinematic-services .service-timeline article:last-child{
+    border-bottom:0 !important;
+  }
+  .cinematic-services .service-timeline h3{
+    margin:12px 0 9px !important;
+    font-size:28px !important;
+  }
+  .cinematic-services .service-timeline p{
+    font-size:14px !important;
+    line-height:1.65 !important;
+    margin:0 !important;
+  }
+
+  /* Prevent the following original services section from inheriting a white transition. */
+  #servicios.services{
+    background:linear-gradient(180deg,#2a0810 0%,#4b0f1a 52%,#2a0810 100%) !important;
+  }
+}
+</style>
+
+
+<style id="premium-strip-safety">
+.premium-strip{display:none !important;}
+</style>
+
+
+<style id="arcamone-final-corrections">
+/* Correcciones finales: coherencia cromática, jerarquía editorial y solapamientos responsive. */
+.decision-section{
+  background:
+    radial-gradient(circle at 78% 22%,rgba(145,20,62,.22),transparent 34%),
+    radial-gradient(circle at 18% 80%,rgba(212,175,55,.055),transparent 30%),
+    linear-gradient(135deg,#2a0810 0%,#4b0f1a 52%,#2a0810 100%) !important;
+  border-top:1px solid rgba(212,175,55,.16);
+}
+.decision-section:before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(22,4,10,.10),transparent 45%,rgba(22,4,10,.16));
+}
+.decision-inner{position:relative;z-index:2}
+.fleet-copy-secondary{margin-top:16px!important;font-size:15px!important;line-height:1.65!important;color:rgba(231,220,221,.68)!important;max-width:620px!important}
+.fleet-copy h2{max-width:760px}
+.fleet-bottom{z-index:10}
+.c3d-caption{
+  max-width:330px;
+}
+@media(max-width:900px){
+  .c3d-caption{left:24px;bottom:18%;max-width:165px;align-items:flex-start;gap:10px}
+  .c3d-caption strong{font-size:15px;line-height:1.05}
+  .c3d-caption small{font-size:9px;line-height:1.35}
+  .c3d-reception{right:24px;bottom:4%;max-width:185px}
+  .c3d-reception strong{font-size:18px}
+  .fleet-copy-secondary{font-size:13px!important;line-height:1.6!important}
+}
+@media(max-width:600px){
+  .decision-section{padding:88px 0!important}
+  .decision-inner{gap:32px}
+  .decision-copy p{font-size:16px!important;line-height:1.7!important}
+  .decision-points{margin:24px 0}
+  .c3d-caption{bottom:20%;max-width:145px}
+  .c3d-caption strong{font-size:14px}
+  .c3d-caption small{font-size:8px}
+  .c3d-reception{bottom:3%;max-width:165px}
+}
+</style>
+<style id="arcamone-final-palette-and-mobile-fix">
+/* Ajuste final de identidad visual y composición móvil */
+.cinematic-3d{
+  background:#4a0d25!important;
+}
+.c3d-world{
+  background:
+    radial-gradient(circle at 72% 38%, rgba(145,35,76,.78) 0%, rgba(104,21,52,.68) 28%, transparent 55%),
+    radial-gradient(circle at 25% 75%, rgba(122,25,59,.48), transparent 52%),
+    linear-gradient(135deg,#4b0d25 0%,#651735 48%,#36091c 100%)!important;
+}
+.c3d-sky{
+  background:linear-gradient(180deg,rgba(77,10,35,.10),rgba(53,7,27,.28))!important;
+}
+
+.cinematic-vision{
+  background:
+    radial-gradient(circle at 78% 45%,rgba(145,35,76,.72),transparent 42%),
+    radial-gradient(circle at 18% 80%,rgba(105,20,54,.55),transparent 48%),
+    linear-gradient(135deg,#4b0d25 0%,#641735 52%,#3a0a1e 100%)!important;
+}
+
+/* La ilustración/logística nunca invade el texto institucional en móvil. */
+@media(max-width:1000px){
+  .fleet-3d{
+    min-height:1380px!important;
+    background:
+      radial-gradient(circle at 70% 72%,rgba(145,35,76,.58),transparent 42%),
+      linear-gradient(160deg,#4b0d25 0%,#651735 50%,#390a1e 100%)!important;
+  }
+  .fleet-copy{
+    top:55px!important;
+    z-index:20!important;
+  }
+  .fleet-copy h2{
+    font-size:clamp(48px,13vw,68px)!important;
+    line-height:.94!important;
+  }
+  .fleet-copy p,
+  .fleet-copy-secondary{
+    position:relative!important;
+    z-index:22!important;
+  }
+  .fleet-stage{
+    top:70%!important;
+    bottom:auto!important;
+    height:430px!important;
+    transform:scale(.62)!important;
+    transform-origin:top center!important;
+    z-index:4!important;
+  }
+  .fleet-bottom{
+    bottom:3%!important;
+    z-index:12!important;
+  }
+}
+
+@media(min-width:1001px){
+  .fleet-stage{z-index:4}
+  .fleet-copy{z-index:12}
+}
+</style>
+
+
+
+<style id="arcamone-final-malbec-palette">
+/* Paleta final Arcamone: bordó / vino / malbec oscuro. Sin negro y sin magenta brillante. */
+:root{
+  --arc-malbec-deep:#300916;
+  --arc-malbec:#3b0b1d;
+  --arc-wine:#471027;
+  --arc-wine-light:#52132c;
+  --arc-gold:#d9b36c;
+  --arc-ivory:#f5eee5;
+}
+
+/* 01 · Experiencia — El negocio se mueve. Nosotros también. */
+.cinematic-3d{
+  background:
+    radial-gradient(circle at 72% 34%, rgba(91,22,48,.46) 0%, transparent 43%),
+    radial-gradient(circle at 20% 82%, rgba(72,14,38,.38) 0%, transparent 48%),
+    linear-gradient(145deg,#3a0b1c 0%,#461027 52%,#310916 100%) !important;
+}
+.c3d-world{
+  background:
+    radial-gradient(circle at 72% 38%, rgba(102,27,56,.46) 0%, rgba(73,15,39,.25) 32%, transparent 58%),
+    radial-gradient(circle at 22% 76%, rgba(82,18,43,.35), transparent 52%),
+    linear-gradient(145deg,#3a0b1c 0%,#4a1027 50%,#320916 100%) !important;
+}
+.c3d-sky{
+  background:linear-gradient(180deg,rgba(63,10,29,.05),rgba(48,8,22,.18)) !important;
+}
+
+/* 02 · Visión */
+.cinematic-vision{
+  background:
+    radial-gradient(circle at 78% 42%,rgba(91,21,48,.44),transparent 42%),
+    radial-gradient(circle at 18% 78%,rgba(72,15,38,.34),transparent 50%),
+    linear-gradient(145deg,#3a0b1c 0%,#461027 52%,#310916 100%) !important;
+  color:var(--arc-ivory) !important;
+}
+
+/* Bloque institucional: misma familia cromática, sin rosa brillante. */
+.fleet-3d{
+  background:
+    radial-gradient(circle at 68% 68%,rgba(91,21,48,.42),transparent 43%),
+    radial-gradient(circle at 18% 20%,rgba(76,16,40,.28),transparent 45%),
+    linear-gradient(155deg,#3a0b1c 0%,#461027 50%,#310916 100%) !important;
+}
+
+/* En móvil, dejar espacio real para el header y evitar que el título quede cortado. */
+@media(max-width:1000px){
+  .fleet-3d{
+    min-height:1380px !important;
+    padding-top:1px !important;
+  }
+  .fleet-copy{
+    top:105px !important;
+  }
+}
+
+/* Evitar que fondos auxiliares vuelvan a introducir negros puros. */
+.fleet-bg,
+.fleet-stage,
+.c3d-grid{
+  background-color:transparent !important;
+}
+</style>
+
+
+<style id="arcamone-unified-malbec-final">
+/* ARCAMONE — corrección cromática y jerarquía visual final.
+   Las secciones señaladas comparten la misma familia bordó/vino/malbec
+   que "Relaciones comerciales construidas con criterio y confianza"
+   y "Servicios para desarrollar negocios". Sin negro ni violeta. */
+:root{
+  --arc-bg-deep:#2a0810;
+  --arc-bg-wine:#4B0F1A;
+  --arc-bg-mid:#3d0c16;
+  --arc-gold:#d9b36c;
+}
+
+/* 01 · Conectamos empresas con oportunidades concretas */
+.fleet-3d{
+  background:
+    radial-gradient(circle at 72% 58%,rgba(126,20,51,.13),transparent 38%),
+    linear-gradient(180deg,var(--arc-bg-deep) 0%,var(--arc-bg-wine) 55%,var(--arc-bg-deep) 100%) !important;
+}
+.fleet-bg{background:transparent !important}
+.fleet-copy{z-index:30 !important}
+.fleet-stage{z-index:4 !important}
+
+/* En móvil la ilustración empieza después del bloque de texto,
+   evitando que barcos/camión queden detrás de los párrafos. */
+@media(max-width:1000px){
+  .fleet-3d{min-height:1450px !important}
+  .fleet-copy{top:105px !important;z-index:30 !important}
+  .fleet-stage{
+    top:76% !important;
+    bottom:auto !important;
+    height:430px !important;
+    transform:scale(.62) !important;
+    transform-origin:top center !important;
+    z-index:4 !important;
+  }
+}
+
+/* 02 · El negocio se mueve. Nosotros también. */
+.cinematic-3d{
+  background:
+    radial-gradient(circle at 74% 42%,rgba(126,20,51,.14),transparent 38%),
+    linear-gradient(180deg,var(--arc-bg-deep) 0%,var(--arc-bg-wine) 55%,var(--arc-bg-deep) 100%) !important;
+}
+.c3d-world{
+  background:
+    radial-gradient(circle at 70% 45%,rgba(126,20,51,.16),transparent 40%),
+    linear-gradient(180deg,var(--arc-bg-deep) 0%,var(--arc-bg-wine) 55%,var(--arc-bg-deep) 100%) !important;
+}
+.c3d-sky{background:transparent !important}
+
+/* 03 · Ver más allá de una operación */
+.cinematic-vision{
+  background:
+    radial-gradient(circle at 76% 45%,rgba(126,20,51,.13),transparent 40%),
+    linear-gradient(180deg,var(--arc-bg-deep) 0%,var(--arc-bg-wine) 55%,var(--arc-bg-deep) 100%) !important;
+  color:#f5eee5 !important;
+}
+
+/* La versión extendida del título conserva la jerarquía del diseño. */
+.c3d-copy h2 em{color:var(--arc-gold) !important}
+
+@media(max-width:900px){
+  .c3d-copy{z-index:20 !important}
+  .c3d-copy h2{font-size:clamp(48px,13vw,68px) !important;line-height:.9 !important}
+  .c3d-building{bottom:14% !important;z-index:3 !important}
+  .c3d-ship{bottom:8% !important;z-index:3 !important}
+  .c3d-truck{bottom:2% !important;z-index:3 !important}
+  .c3d-reception{z-index:8 !important}
+}
+</style>
+
 </head>
 <body>
 <div class="cursor"></div><div class="cursor-dot"></div><div class="progress"></div>
@@ -778,9 +1109,10 @@ header nav,.site-header nav,.navbar nav{align-items:center!important}
 <section id="fleet-3d" class="fleet-3d" data-theme="operations">
   <div class="fleet-bg"><div class="fleet-orb"></div><div class="fleet-grid"></div></div>
   <div class="fleet-copy">
-    <span class="fleet-kicker">ARCamone 3D · International Logistics</span>
-    <h2>El negocio se mueve.<br><em>Nosotros también.</em></h2>
-    <p>Una representación tridimensional de los medios que convierten una oportunidad comercial en una operación real. El movimiento, la coordinación y la llegada forman parte de una misma cadena.</p>
+    <span class="fleet-kicker">ARCAMONE INTERNACIONAL · DESARROLLO COMERCIAL</span>
+    <h2>Conectamos empresas<br><em>con oportunidades concretas.</em></h2>
+    <p>Arcamone Internacional actúa como articulador comercial entre empresas que buscan proveedores, compradores o nuevas oportunidades de mercado. Entendemos la necesidad, identificamos contrapartes compatibles, ordenamos la información y facilitamos el diálogo para que las partes puedan avanzar sobre una base comercial clara.</p>
+    <p class="fleet-copy-secondary">No reemplazamos a las partes ni tomamos la decisión por ellas: aportamos búsqueda, contexto, coordinación y seguimiento para transformar un contacto inicial en una relación profesional.</p>
   </div>
   <div class="fleet-stage" aria-label="Visualización 3D de logística internacional">
     <div class="route-line"><span></span><span></span><span></span><span></span></div>
@@ -790,16 +1122,16 @@ header nav,.site-header nav,.navbar nav{align-items:center!important}
       <div class="ship-stack s1"></div><div class="ship-stack s2"></div><div class="ship-stack s3"></div>
       <div class="ship-containers"><b></b><b></b><b></b><b></b><b></b><b></b></div>
       <div class="ship-bow"></div><div class="ship-stern"></div>
-      <div class="fleet-tag">MARITIME · GLOBAL</div>
+      <div class="fleet-tag">MERCADOS · CONEXIONES</div>
     </div>
     <div class="fleet-object truck-3d" data-speed="1.1">
       <div class="truck-shadow"></div><div class="truck-cab"><div class="windshield"></div><div class="side-window"></div><div class="grille"></div><div class="headlamp"></div></div>
       <div class="truck-container"><div class="container-ribs"></div><strong>ARCAMONE</strong><small>INTERNATIONAL TRADE</small></div>
       <div class="wheel w1"></div><div class="wheel w2"></div><div class="wheel w3"></div><div class="wheel w4"></div>
-      <div class="fleet-tag">LAND · PRECISION</div>
+      <div class="fleet-tag">RELACIONES · DESARROLLO</div>
     </div>
   </div>
-  <div class="fleet-bottom"><span>ORIGIN</span><i></i><span>COORDINATION</span><i></i><span>DESTINATION</span></div>
+  <div class="fleet-bottom"><span>BÚSQUEDA</span><i></i><span>VÍNCULO</span><i></i><span>DESARROLLO</span></div>
 </section>
 
 
@@ -842,8 +1174,8 @@ header nav,.site-header nav,.navbar nav{align-items:center!important}
 
     <div class="c3d-copy">
       <span class="c3d-eyebrow">ARCAMONE INTERNACIONAL · EXPERIENCIA</span>
-      <h2>El negocio<br><em>se mueve.</em></h2>
-      <p>Una experiencia visual para entender cómo Arcamone conecta empresas, mercados y operaciones internacionales.</p>
+      <h2>El negocio se<br>mueve.<br><em>Nosotros también.</em></h2>
+      <p></p>
       <div class="c3d-route"><span>ORIGEN</span><i></i><span>CONEXIÓN</span><i></i><span>DESTINO</span></div>
     </div>
 
@@ -916,12 +1248,6 @@ header nav,.site-header nav,.navbar nav{align-items:center!important}
   </div>
 </section>
 
-<div class="premium-strip" aria-label="Propuesta de valor">
-  <div class="ps-item"><span class="ps-num">01 / DIAGNÓSTICO</span><div class="ps-title">Entender antes de conectar</div><div class="ps-copy">Necesidad, mercado, producto y contexto comercial.</div></div>
-  <div class="ps-item"><span class="ps-num">02 / CURADURÍA</span><div class="ps-title">Seleccionar con criterio</div><div class="ps-copy">Proveedores, clientes y oportunidades compatibles.</div></div>
-  <div class="ps-item"><span class="ps-num">03 / NEGOCIACIÓN</span><div class="ps-title">Convertir interés en acuerdo</div><div class="ps-copy">Acompañamiento comercial y claridad en cada etapa.</div></div>
-  <div class="ps-item"><span class="ps-num">04 / COORDINACIÓN</span><div class="ps-title">Llevar el negocio hasta destino</div><div class="ps-copy">Documentación, logística y continuidad operativa.</div></div>
-</div>
 
 <section id="servicios" class="section services" data-theme="services">
  <div class="section-inner">
@@ -1101,8 +1427,8 @@ header nav,.site-header nav,.navbar nav{align-items:center!important}
    <h2>Empezar una conversación <span class="gold">con sentido.</span></h2>
   </div>
   <div class="decision-copy">
-   <p>No hace falta tener una operación completamente definida para acercarse. La primera conversación puede partir de una necesidad, un producto, un mercado que se quiere explorar o una búsqueda de contraparte.</p>
-   <div class="decision-points"><span>Qué buscamos</span><span>Qué necesitamos</span><span>Qué alternativas existen</span><span>Cuál puede ser el siguiente paso</span></div>
+   <p>El primer contacto no necesita llegar con una operación cerrada. Arcamone puede intervenir cuando una empresa necesita identificar un proveedor, desarrollar un mercado, encontrar compradores o evaluar una alternativa comercial. A partir de esa necesidad, ordenamos la información inicial y definimos con claridad qué debe suceder para avanzar.</p>
+   <div class="decision-points"><span>Qué necesita la empresa</span><span>Qué mercado u oferta se busca</span><span>Qué contraparte es adecuada</span><span>Qué información falta para avanzar</span></div>
    <a class="btn primary" href="#contacto">Presentar una oportunidad ↗</a>
   </div>
  </div>
@@ -1260,5 +1586,13 @@ addEventListener('scroll',()=>{
 <script id="logo-normalizer">
 (function(){function fix(){document.querySelectorAll('header .logo img,header .brand img,nav .logo img,nav .brand img,.site-logo img,.brand-logo img,.navbar-brand img').forEach(function(i){i.style.maxHeight='42px';i.style.height='42px';i.style.width='auto';i.style.objectFit='contain';i.style.transform='none';});}fix();window.addEventListener('resize',fix,{passive:true});})();
 </script>
+<script>
+/* Títulos solicitados */
+(function(){
+  const title=document.querySelector('#experiencia .c3d-copy h2');
+  if(title) title.innerHTML='El negocio se mueve.<br><em>Nosotros también.</em>';
+})();
+</script>
+
 </body>
 </html>
